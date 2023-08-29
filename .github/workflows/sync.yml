@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://Apexbot:$HF_TOKEN@huggingface.co/spaces/Apexbot/Insightswap main
+        run: git push -f https://Apexbot:$HF_TOKEN@huggingface.co/spaces/Apexbot/Insightswap main
