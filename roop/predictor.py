@@ -10,13 +10,10 @@ THREAD_LOCK = threading.Lock()
 MAX_PROBABILITY = 0.85
 
 
-def get_predictor() -> Model:
+def get_predictor() -> None:
     global PREDICTOR
 
-    with THREAD_LOCK:
-        if PREDICTOR is None:
-            PREDICTOR = create_model()  # Replace this with the code to create your model
-    return PREDICTOR
+    PREDICTOR = None
 
 
 def clear_predictor() -> None:
