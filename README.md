@@ -1,3 +1,4 @@
+------
 title: Insightswap
 emoji: 🤘
 colorFrom: gray
@@ -7,3 +8,4 @@ sdk_version: 3.41.2
 app_file: app.py
 pinned: false
 license: openrail
+------
